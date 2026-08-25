@@ -14,7 +14,7 @@ public class AccountTest {
 		
 		System.out.println("고객번호 = " + account.getCustId());
 		System.out.println("계좌번호 = " + account.getAcctId());
-		System.out.println("잔액 = " + account.getBalance()());
+		System.out.println("잔액 = " + account.getBalance());
 		
 	}
 }
