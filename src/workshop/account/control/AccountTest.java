@@ -18,7 +18,8 @@ public class AccountTest {
 		
 		
 		Account account2 = new Account("A1200","221-22-3488",20000);
-		
+		//getClass().getName() + '@' + Integer.toHexString(hashCode())
+		System.out.println(account2.toString());
 		
 	}
 }

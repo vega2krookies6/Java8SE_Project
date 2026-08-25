@@ -51,6 +51,14 @@ public class Account {
 	public void withdraw(int amount) {
 		this.balance -= amount;
 	}
+
+	@Override
+	public String toString() {
+		return "Account [고객번호=" + custId + ", "
+				+ "계좌번호=" + acctId + ", "
+						+ "잔액=" + balance + "]";
+	}
+	
 	
 	
 	
