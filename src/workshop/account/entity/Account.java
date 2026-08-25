@@ -4,6 +4,11 @@ public class Account {
 	private String custId;
 	private String acctId;
 	private int balance;
+	
+	//default construcotr 선언
+	public Account() {
+		System.out.println("Account 기본생성자가 호출됨!");
+	}
 
 	//getter method
 	public String getCustId() {

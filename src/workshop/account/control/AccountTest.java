@@ -1,7 +1,7 @@
 package workshop.account.control;
 
 import workshop.account.entity.Account;
-
+//ctrl + f11 java run 
 public class AccountTest {
 	public static void main(String[] args) {
 		Account account = new Account();
