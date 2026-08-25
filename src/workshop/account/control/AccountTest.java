@@ -19,6 +19,8 @@ public class AccountTest {
 		
 		Account account2 = new Account("A1200","221-22-3488",20000);
 		//getClass().getName() + '@' + Integer.toHexString(hashCode())
+		//출금
+		account2.withdraw(500000);
 		System.out.println(account2.toString());
 		
 	}
