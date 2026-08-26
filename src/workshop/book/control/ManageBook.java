@@ -39,7 +39,7 @@ public class ManageBook {
 		for (Publication publication : pubs) {
 			System.out.println(publication);
 		}
-		
+		//빠삐용
 		Publication pub2 = pubs[2];
 		System.out.println("=== 가격변경 전 ===");
 		System.out.println(pub2.getTitle() + " = " + pub2.getPrice());
@@ -84,6 +84,8 @@ public class ManageBook {
 	 * void modifyPrice(Magazine mag)
 	 * void modifyPrice(Novel nov)
 	 * void modifyPrice(ReferenceBook refBook)
+	 * 
+	 * Publication p = new Magazine();
 	 */
 	public static void modifyPrice(Publication pub) {
 		double rate = 0.0;
