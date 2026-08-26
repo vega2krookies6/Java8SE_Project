@@ -31,5 +31,10 @@ public class PersonManager {
 					person.getGender() +  "\t [주소] " + person.getAddress());
 		}
 	}
+	
+	public int findByGender(PersonEntity[] persons, char gender) {
+		int genderCnt = 0;
+		return genderCnt;
+	}
 
 }
