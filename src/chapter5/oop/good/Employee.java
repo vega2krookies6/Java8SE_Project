@@ -1,6 +1,6 @@
 package chapter5.oop.good;
 
-public class Employee {
+public abstract class Employee {
 
 	private String name;
 	protected double salary;
@@ -23,4 +23,6 @@ public class Employee {
 	    return this.salary;
 	}
 
+	//추상메서드
+	public abstract void manageSalary(double rate);
 }
