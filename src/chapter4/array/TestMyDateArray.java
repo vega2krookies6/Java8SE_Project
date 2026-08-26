@@ -10,17 +10,22 @@ public class TestMyDateArray {
 		//1.MyDate 타입 배열선언 및 생성
 		MyDate[] dates = new MyDate[3];
 		//2. 배열 채우기
-		test.fillArray(dates);
+		//test.fillArray(dates);
+		//dates[0] 는 MyDate 타입
+		fillArrayNew(dates);
 		
 		System.out.println(dates[2].getMonth());
 		//3. 배열 출력하기
 		test.printArray(dates);
 		
 	}//main
-	public void fillArray(MyDate[] dates) {
+	private static void fillArrayNew(MyDate[] dates) {
 		dates[0] = new MyDate(2013, 7, 17);
 		dates[1] = new MyDate(2014, 8, 1);
 		dates[2] = new MyDate(2015, 9, 3);
+	}
+	public void fillArray(MyDate[] dates) {
+		fillArrayNew(dates);
 	
 	}
 	public void printArray(MyDate[] dates) {
