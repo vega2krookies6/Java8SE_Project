@@ -35,6 +35,9 @@ public class EqualsTest {
         MyDate date2 = new MyDate( 6, 9, 2006 );
         MyDate date3 = date2;
 
+        System.out.println("date1 hashCode" + date1.hashCode());
+        System.out.println("date2 hashCode" +date2.hashCode());
+        
         System.out.println(date1 == date2);
         System.out.println(date2 == date3);
         
