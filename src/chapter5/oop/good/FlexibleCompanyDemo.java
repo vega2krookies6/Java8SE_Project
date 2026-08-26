@@ -29,7 +29,7 @@ public class FlexibleCompanyDemo {
         for(Employee emp: emps) {
         	System.out.print("현재 월급입니다. ");
         	if(emp instanceof Manager) {
-        		System.out.print("부서명 = " + ((Manager)emp).getDeptName() + " " );
+        		System.out.print("부서명 = " + ((Manager)emp).getDeptName() + " 관리자 " );
         	}
         	System.out.println(emp.getName() + "의 현재 월급은 " + emp.getSalary() + " 만원 입니다.");
         	
