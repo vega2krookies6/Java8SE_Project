@@ -26,9 +26,7 @@ public class MyDate extends Object {
     	return year;
     }
 
-	/**
-	  * day�� ���� setting ���ִ� method
-	  */
+	
     public void setDay( int newDay ){
     	day = newDay;
     }
@@ -46,15 +44,15 @@ public class MyDate extends Object {
 		return "MyDate [day=" + day + ", month=" + month + ", year=" + year + "]";
 	}
 
-//	@Override
-//	public int hashCode() {
-//		final int prime = 31;
-//		int result = 1;
-//		result = prime * result + day;
-//		result = prime * result + month;
-//		result = prime * result + year;
-//		return result;
-//	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + day;
+		result = prime * result + month;
+		result = prime * result + year;
+		return result;
+	}
 
 	@Override
 	public boolean equals(Object obj) {
