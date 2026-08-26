@@ -2,8 +2,11 @@ package chapter5.oop.good;
 
 public class FlexibleCompanyDemo {
     public static void main(String[] args) {
-    	Employee emp = new Employee();
-    	
+    	//Cannot instantiate the type Employee
+    	//Employee emp = new Employee();
+    	Employee emp1 = new MereClerk("철수", 100);
+    	Employee emp2 = new MereClerk("영희", 100);
+    	Employee emp3 = new Manager("홍길동", 200,"인사부");
         
         MereClerk mereClerk1 = new MereClerk("철수", 100);
         MereClerk mereClerk2 = new MereClerk("영희", 100);
