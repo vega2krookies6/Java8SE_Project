@@ -1,6 +1,6 @@
 package workshop.book.entity;
 
-//���ǹ�
+//출판을 나타내는 부모 클래스
 public class Publication extends Object {
 	private String title;
 	private String publishingDate;
