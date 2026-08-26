@@ -11,6 +11,7 @@ public class PersonManager {
 		personManager.showPersons(persons);
 		//personManager.findByGender(persons, '여');
 		System.out.println(personManager.findByGender(persons, '남') + "명 입니다.");
+		personManager.showPerson(persons, "김하늘");
 		
 	}
 	
