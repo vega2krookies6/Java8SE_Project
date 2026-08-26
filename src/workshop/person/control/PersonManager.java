@@ -9,6 +9,8 @@ public class PersonManager {
 		PersonEntity[] persons = new PersonEntity[10];
 		personManager.fillPersons(persons);
 		personManager.showPersons(persons);
+		//personManager.findByGender(persons, '여');
+		System.out.println(personManager.findByGender(persons, '여') + "명 입니다.");
 		
 	}
 	
