@@ -11,12 +11,11 @@ public class PersonManagerList {
 		
 		List<PersonEntity> personList = new ArrayList<>();
 		
-		PersonEntity[] persons = new PersonEntity[10];
-		personManager.fillPersons(persons);
-		personManager.showPersons(persons);
+		personManager.fillPersons(personList);
+		personManager.showPersons(personList);
 		//personManager.findByGender(persons, '여');
-		System.out.println(personManager.findByGender(persons, '남') + "명 입니다.");
-		personManager.showPerson(persons, "김하늘");
+		System.out.println(personManager.findByGender(personList, '남') + "명 입니다.");
+		personManager.showPerson(personList, "김하늘");
 		
 	}
 	
@@ -33,14 +32,14 @@ public class PersonManagerList {
 		persons.add(new PersonEntity("최철수","7601211025101", "인천 계양구", "032-122-7832"));
 	}
 	
-	public void showPersons(PersonEntity[] persons) {
+	public void showPersons(List<PersonEntity> persons) {
 		for (PersonEntity person : persons) {
 			System.out.println("[이름] " + person.getName() + "\t [성별] " + 
 					person.getGender() +  "\t [주소] " + person.getAddress());
 		}
 	}
 	
-	public int findByGender(PersonEntity[] persons, char gender) {
+	public int findByGender(List<PersonEntity> persons, char gender) {
 		int genderCnt = 0;
 		for (PersonEntity person : persons) {
 			//char는 primitive type이므로 값을 비교할 때는 == 연산자를 사용해도 됨
@@ -52,7 +51,7 @@ public class PersonManagerList {
 		return genderCnt;
 	}
 	
-	public void showPerson(PersonEntity[] persons, String name) {
+	public void showPerson(List<PersonEntity> persons, String name) {
 		for (PersonEntity person : persons) {
 			if(person.getName().equals(name)) {
 				System.out.println("[이름] " + person.getName());
