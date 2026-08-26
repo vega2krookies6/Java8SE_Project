@@ -1,6 +1,6 @@
 package chapter1.first;
 
-public class MyDate{
+public class MyDate extends Object {
     private int day = 1;
     private int month = 1;
     private int year = 2000;
@@ -40,4 +40,6 @@ public class MyDate{
     public void setYear( int newYear ){
     	year = newYear;
     }
+    
+    
 }
