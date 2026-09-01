@@ -1,4 +1,5 @@
 package workshop.animal.control;
+
 import workshop.animal.entity.Animal;
 import workshop.animal.entity.Cat;
 import workshop.animal.entity.Pet;
